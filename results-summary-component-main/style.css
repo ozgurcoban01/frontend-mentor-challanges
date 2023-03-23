@@ -1,0 +1,248 @@
+:root {
+  --red: hsl(0, 100%, 67%);
+  --orange: hsl(39, 100%, 56%);
+  --green: hsl(166, 100%, 37%);
+  --blue: hsl(234, 85%, 45%);
+
+  --recup: hsl(252, 100%, 67%);
+  --recdown: hsl(241, 81%, 54%);
+  --circleup: hsla(256, 72%, 46%, 1);
+  --circledown: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --platblue: hsl(221, 100%, 96%);
+  --lightlavender: hsl(241, 100%, 89%);
+  --gray: hsl(224, 30%, 27%);
+
+  --fontsize: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.middle {
+  border-radius: 30px;
+  background-color: white;
+  width: 35%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 18px 32px -4px rgba(0,0,0,0.31);
+  -moz-box-shadow: 0px 18px 32px -4px rgba(0,0,0,0.31);
+  box-shadow: 0px 18px 32px -4px rgba(0,0,0,0.31);
+}
+.left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, var(--recup), var(--recdown));
+  flex-direction: column;
+  padding: 5%;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.right {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--circleup),
+    var(--circledown)
+  );
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.uppertext {
+  color: var(--lightlavender);
+  font-size: 23px;
+  font-weight: 700;
+}
+.lowertext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.great {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.long {
+  text-align: center;
+  color: var(--lightlavender);
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+.big {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 60px;
+}
+.of100 {
+  color: hsla(241, 100%, 89%, 0.6);
+}
+
+.right {
+  justify-content: start;
+  align-items: start;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.summary {
+  color: var(--gray);
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+.rightContent {
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+}
+.colored {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 5% 0;
+  width: 100%;
+  height: 17%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+.coloredLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+svg {
+  height: 100%;
+  width: 30px;
+}
+span {
+  box-sizing: border-box;
+  padding-left: 10%;
+}
+
+.coloredRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+.reactionLeft {
+  color: var(--red);
+}
+.memoryLeft {
+  color: var(--orange);
+}
+.verbalLeft {
+  color: var(--green);
+}
+.visualLeft {
+  color: var(--blue);
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.rightStroke{
+    font-weight: 800;
+    box-sizing: border-box;
+    padding-right: 5px;
+    color: hsl(224, 30%, 27%);;
+}
+
+
+.coloredRight{
+    color: hsla(224, 30%, 27%,0.5);;
+}
+.button{
+    color: var(--white);
+    font-weight: 500;
+
+    background-color: hsl(224, 30%, 27%);;
+    border-radius: 1000px;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button:hover{
+
+    background-color: transparent;
+
+    background-image: linear-gradient(to bottom, var(--recup), var(--recdown));
+}
+
+@media screen and (max-width: 768px) {
+    .middle{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .left{
+        width: 100vw;
+        height: 100vh;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .circle{
+        width: 130px;
+        height: 130px;
+    }
+    .great{
+        font-size: 25px;
+    }
+    .uppertext{
+        font-size: 20px;
+    }
+    .right{
+        
+        width: 100vw;
+    }
+}
