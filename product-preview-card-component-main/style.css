@@ -1,0 +1,94 @@
+:root {
+  --italic: "Fraunces", serif;
+  --sans: "Montserrat", sans-serif;
+
+  --dark: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very: hsl(212, 21%, 14%);
+  --dark: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+}
+
+.container {
+  background-color: white;
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContainer {
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+img {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.rightContainer {
+    display: flex;
+
+    flex-direction: column;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px;
+
+}
+
+.perfume{
+    font-family: var(--sans);
+    color: var(--dark);
+    font-weight: 500;
+    font-size:12px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.bigText{
+    font-weight: 900;
+    font-size: 40px;
+}
+.detail{
+    
+}
+.price{
+    
+}
+.green{
+    
+}
+.gray{
+    
+}
+.button{
+    
+}
+.cart{
+    background-color: red;
+}
+.addcart{
+    
+}
+.svg{
+    width: 10px;
+}
